@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+//escape analysis for analysing whether a variable will be on stack or queue
+//if we use pointer by reference it will required outside func scope, hence esc analysis determines variable inside heap else stack
+
 func main(){
 	fmt.Println("learn pointers")
 	a:=10
